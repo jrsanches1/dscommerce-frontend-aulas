@@ -1,5 +1,7 @@
 
+import './styles.css';
 import computerImg from '../../assets/computer.png';
+import ProductCategory from '../ProductCategory';
 
 export default function ProductDetailsCard() {
     return (
@@ -10,20 +12,15 @@ export default function ProductDetailsCard() {
             <div className="dsc-product-details-bottom">
                 <h3>R$ 5000,00</h3>
                 <h4>Computador Gamer XT</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                     labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                     laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
                     voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
                     non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
                 <div className="dsc-category-container">
-                    <div className="dsc-category">
-                        Eletrônicos
-                    </div>
-                    <div className="dsc-category">
-                        Computadores
-                    </div>
+                    <ProductCategory />
+                    <ProductCategory />                    
                 </div>
             </div>
         </div>
